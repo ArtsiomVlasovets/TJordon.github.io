@@ -2,13 +2,21 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+		.resume_container{
+		font-size: 0.8em;
+	}
+	.resume_descr{
+		margin-bottom: 10px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.personal_last_block {
 		margin-top: 35px;
+	}
+	.resume_container{
+		font-size: 0.8em;
 	}
 }
 
@@ -28,7 +36,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.top_wrapper .top_text h1 {
-		font-size: 2em;
+		font-size: 1.5em;
 		padding-left: 10px;
 		padding-right: 10px;
 	}

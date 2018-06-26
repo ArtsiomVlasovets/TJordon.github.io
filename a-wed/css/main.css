@@ -1,7 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
@@ -41,8 +41,12 @@ section,
     margin-top: 0;
     margin-bottom: 35px; }
 
-section {
+section{
   padding: 70px 0 90px; }
+
+.s_resume{
+  padding: 70px 15px 90px; }
+
   section h2 {
     text-align: center;
     font-size: 24px;
@@ -111,12 +115,12 @@ section {
     position: relative; }
 
 .toggle_mnu {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   z-index: 100;
   border: none;
-  right: 20px;
+  right: 30px;
   top: 20px; }
   .toggle_mnu span {
     display: block; }
@@ -282,8 +286,8 @@ svg path {
       font-weight: bold;
       font-size: 2.8em;
       background-color: rgba(0, 0, 0, 0.3);
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 0px;
+      margin-right: 0px;
       -webkit-animation-delay: 0.5s;
       animation-delay: 0.5s; }
     .top_wrapper .top_text button {
@@ -362,7 +366,7 @@ svg path {
   margin-right: 10px; }
 
 .resume_container .resume_descr {
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 .resume_container .resume_icon {
   text-align: right;
@@ -389,7 +393,8 @@ svg path {
   text-transform: uppercase; }
 
 .resume_container .resume_description {
-  font-style: italic; }
+  font-style: italic;
+  color: #333333; }
 
 .resume_container .resume_item {
   margin-bottom: 40px; }
