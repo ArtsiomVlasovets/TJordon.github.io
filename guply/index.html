@@ -52,12 +52,12 @@
 	<section class="main">	
 		<div class="container">	
 			<div class="row">	
-				<div class="col-md-6">
+				<div class="col-md-6 order-sm-2 order-2">
 					<div class="main-img">	
 						<img src="img/main.jpg" class="img-responsive" alt="">
 					</div>
 				</div>
-				<div class="col-md-6">	
+				<div class="col-md-6 order-sm-1 order-1">	
 					<div id="reg-block" class="header-composition">
 
 						<div class="welcome">
@@ -138,7 +138,7 @@
 									<label class="control-group">
 										<span class="help-block text-danger"></span>
 										<input type="password" name="password" placeholder="Password*" data-validation-required-message="Incorrect E-mail" required />
-										Forgot password?
+										<a href="" id="open_window">Forgot password?</a>
 									</label>	
 
 									<div class="bottom-form-container flex">
@@ -194,16 +194,11 @@
 						</div>
 					</div>
 				</div>
-
-
-
-
-
 			</div>
-
-
-
 		</form>
+
+
+
 	</section>
 	<footer>
 
@@ -242,14 +237,47 @@
 
 
 
+	<div class="overlay" title="окно"></div>
+	<div class="popup">
+		<div class="close_window"><span class="close"></span></div>
+		<div class="popup-email-container">
+			<div class="img-popup">
+				<img src="img/key.png " class="img-responsive" alt="">
+			</div>
+
+			<h2>Forgot your password?</h2>
+			
+	<form action="" class="main_form" novalidate method="post">
+			
+			<div class="bottom-email-container">
+
+				<div class="container">
+					<div class="row">
+						<div class="offset-lg-2 col-lg-6 col-md-12 col-sm-12 col-12">	<div class="email-group">
+							<label class="control-group">
+								<input type="email" id="email" name="email" placeholder="Email Address" data-validation-required-message="Incorrect E-mail" required />
+								<span class="help-block text-danger"></span>
+
+							</label>
+						</div></div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-12">	
+							<div class="group-container">	
+								<div class="button-group">
+									<button>Reset Password</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<p>We will send you instructions to reset your password and get you back on track!</p>
+
+		</div>
+	</div>
 
 
 
-
-
-
-
-</div>
 <script src="js/scripts.min.js"></script>
 <script src="/js/jqBootstrapValidation.js"></script>
 </body>
