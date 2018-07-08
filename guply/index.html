@@ -23,32 +23,27 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-
 </head>
 
+<!-----------------HEADER-------------------------->
 <body>
-
-
 	<header>
 		<div class="top-line">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-md-2 col-2"><a href="" class="logo">
 						<img src="img/logo.png" alt="">
 					</a></div>
 					<div class="col-md-10 col-10">	<div class="top-ask">	
-						<a href="">What is Quply?</a>
+						<a href="" class="btn btn-outline-secondary">What is Quply?</a>
 					</div></div>
 				</div>	
 			</div>
-
-
-			
-
 		</div>
 	</header>
 
 
+<!-----------------MAIN-------------------------->
 	<section class="main">	
 		<div class="container">	
 			<div class="row">	
@@ -57,15 +52,29 @@
 						<img src="img/main.jpg" class="img-responsive" alt="">
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-5 order-sm-1 order-1 order-md-2 order-lg-2">	
+				<div class="col-md-6 col-lg-5 order-sm-1 order-1 order-md-2 order-lg-2">
+					<!-----------------SIGN_UP-------------------------->					
 					<div id="reg-block" class="header-composition">
-
 						<div class="welcome">
-							<h4>or <span id="loginId" class="accent-color">Log in</span></h4>
-							<h2 class="h2 animated pulse">Join <span>Qu<span class="accent-color">ply</span></span> at this moment</h2> <img src="img/Group 2.png" alt="">
+							<div class="login-wrap">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6 col-7">
+											<h6 class="h6 text-left">Create an account</h6>
+										</div>
+										<div class="col-md-6 ml-md-auto  ml-auto col-5">
+											<h6 text-right>or <span id="loginId" class="accent-color">Log in</span></h6>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="top-soc-button">
-								<a href="#" class="soc-button-f"><span class="fa fa-facebook fa-inverse fa-2x" ></span>Sign up with Facebook</a>
-								<a href="#" class="soc-button-g"><span class="fa fa-google fa-inverse fa-2x" aria-hidden="true"></span>Sign up with Google</a>
+								<a href="" class="btn btn-sm btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"></span> Sign up with Facebook
+								</a>
+								<a href="" class="btn btn-sm btn-block btn-social btn-google">
+									<span class="fa fa-google"></span> Sign  with Google
+								</a>
 								<p><span>or with email</span></p>
 							</div>
 
@@ -106,28 +115,46 @@
 											</div>
 										</div>
 										<div class="form-button">
-											<button>Create an account</button>
+											<button  class="btn" data-toggle="modal" data-target="#exampleModalLong">Create an account</button>
+
+
+
+
 										</div>
 									</div>
 								</form>
 							</div>
-
-
 						</div>
 					</div>
 
 
+					<!-----------------LOG_IN-------------------------->
+
 					<div id="login-block" class="header-composition" style="display: none">
 
 						<div class="welcome">
-							<h4>or <span id="createId" class="accent-color">Create an account</span></h4>
-							<div class="title-form-container">
-								<h2 class="h2 animated pulse">Sign in to <span>Qu<span class="accent-color">ply</span></span></h2> <img src="img/Group 2.png" alt="">
-							</div>
-							<a href="#" class="soc-button-f"><span class="fa fa-facebook fa-inverse fa-2x" ></span>Sign up with Facebook</a>
-							<a href="#" class="soc-button-g"><span class="fa fa-google fa-inverse fa-2x" aria-hidden="true"></span>Sign up with Google</a>
-							<p><span> or </span></p>
 
+							<div class="login-wrap">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6 col-7">
+											<h6 class="h6 text-left">Log in</h6>
+										</div>
+										<div class="col-md-6 ml-md-auto  ml-auto col-5">
+											<h6 text-right>or <span id="createId" class="accent-color">Create an account</span></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-soc-button">
+								<a href="" class="btn btn-sm btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"></span> Sign in with Facebook
+								</a>
+								<a href="" class="btn btn-sm btn-block btn-social btn-google">
+									<span class="fa fa-google"></span> Sign in with Google
+								</a>
+								<p><span>or with email</span></p>
+							</div>
 
 							<div class="form-container">
 								<form action="" class="main_form" novalidate method="post">
@@ -153,30 +180,24 @@
 											</div>
 										</div>
 										<div class="form-button">
-											<button id="sign" >Sign In</button>
+											<button class="btn" id="sign" >Sign In</button>
 										</div>
 									</div>
 								</form>
 							</div>
-
-
 						</div>
 					</div>
-
-
-
-
+					<!-----------------LOG_IN-------------------------->
 				</div>	
 			</div>
 		</div>
 	</section>
+<!-----------------JOIN-------------------------->
 	<section class="join-to">
 		<form action="" class="main_form" novalidate method="post">
-			
 			<div class="bottom-email-container">
-
 				<div class="container">
-					<div class="row">
+					<div class="row justify-content-center">
 						<div class="col-md-4 col-sm-12 col-12"><div class="label-group">
 							<h2>Join the movement</h2>
 						</div></div>
@@ -184,13 +205,12 @@
 							<label class="control-group">
 								<input type="email" id="email" name="email" placeholder="Email Address" data-validation-required-message="Incorrect E-mail" required />
 								<span class="help-block text-danger"></span>
-
 							</label>
 						</div></div>
 						<div class="col-md-3 col-sm-4 col-12">	
 							<div class="group-container">	
 								<div class="button-group">
-									<button>Get me In</button>
+									<button class="btn">Get me In</button>
 								</div>
 							</div>
 						</div>
@@ -198,19 +218,9 @@
 				</div>
 			</div>
 		</form>
-
-
-
 	</section>
+
 	<footer>
-
-
-
-
-
-
-
-
 		<div class="footer-container">
 			<div class="bottom-line">		
 				<div class="container">
@@ -218,7 +228,7 @@
 						<div class="col-md-7 col-sm-8 col-12">
 							<nav class="footer-nav">
 								<ul>
-									<li><a href="">Privacy & Terms</a></li>
+									<li><a href="" data-toggle="modal" data-target="#exampleModalLong">Privacy & Terms</a></li>
 									<li><a href="">Contact Us</a></li> 
 									<li><a href="" id="credit">Credits</a></li> 
 								</ul>
@@ -234,32 +244,26 @@
 				</div>
 			</div>
 		</div>
-
 	</footer>
 
-
-
+<!-----------------POPUP-------------------------->
 	<div class="overlay" title="window"></div>
 	<div class="popup">
-		<div class="close_window"><span class="close"></span></div>
+		<div class="close_window"><span class="close"></span>
+		</div>
 		<div class="popup-email-container">
 			<div class="img-popup">
 				<img src="img/key.png " class="img-responsive" alt="">
 			</div>
-
-			<h2>Forgot your password?</h2>
-			
+			<h2>Forgot your password?</h2>			
 			<form action="" class="main_form" novalidate method="post">
-
 				<div class="bottom-email-container">
-
 					<div class="container">
-						<div class="row">
+						<div class="row justify-content-center">
 							<div class="offset-lg-2 col-lg-6 col-md-12 col-sm-12 col-12">	<div class="email-group">
 								<label class="control-group">
 									<input type="email" id="email" name="email" placeholder="Email Address" data-validation-required-message="Incorrect E-mail" required />
 									<span class="help-block text-danger"></span>
-
 								</label>
 							</div></div>
 							<div class="col-lg-3 col-md-12 col-sm-12 col-12">	
@@ -274,16 +278,14 @@
 				</div>
 			</form>
 			<p>We will send you instructions to reset your password and get you back on track!</p>
-
 		</div>
 	</div>
 
-
+<!-----------------CREDITS-------------------------->
 	<div class="overlay" title="window"></div>
 	<div class="popup-credit">
 		<div class="close_window_credit"><span class="close"></span></div>
 		<div class="popup-email-container">
-
 
 			<h2>Credits</h2>
 			<p>Web Deisgn</br>by</p>
@@ -301,19 +303,48 @@
 			<p>Example</br>by</p>
 			<h4>Name, Country</h4>
 			<h5>Email Address</h5>
-
-
-
-
-
-
-
-			</div>
 		</div>
+	</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Privacy & <a href="">Terms</a></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <h2>Main title Privacy</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+             <h2>Iusto dolorum distinctio!</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+              <h2>Temporibus ab aperiam rem</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+              <h2>Culpa ipsam maxime</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+              <h2>Vero eos et beatae iusto</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+              <h2>Temporibus ab aperiam rem</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-continue">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-		<script src="js/scripts.min.js"></script>
-		<script src="/js/jqBootstrapValidation.js"></script>
-	</body>
-	</html>
+
+	<script src="js/scripts.min.js"></script>
+	
+
+
+</body>
+</html>
