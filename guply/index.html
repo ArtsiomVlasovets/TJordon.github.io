@@ -47,12 +47,12 @@
 	<section class="main">	
 		<div class="container">	
 			<div class="row">	
-				<div class="col-md-6 col-lg-7 order-sm-2 order-2  order-md-1 order-lg-1">
+				<div class="col-md-6 col-lg-7 col-xl-7 order-sm-2 order-2  order-md-1 order-lg-1">
 					<div class="main-img">	
 						<img src="img/main.jpg" class="img-responsive" alt="">
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-5 order-sm-1 order-1 order-md-2 order-lg-2">
+				<div class="col-md-6 col-lg-5 col-xl-4 order-sm-1 order-1 order-md-2 order-lg-2">
 					<!-----------------SIGN_UP-------------------------->					
 					<div id="reg-block" class="header-composition">
 						<div class="welcome">
@@ -60,22 +60,31 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-md-6 col-7">
-											<h6 class="h6 text-left">Create an account</h6>
+											<h6 class="h6 text-left">create an account</h6>
 										</div>
 										<div class="col-md-6 ml-md-auto  ml-auto col-5">
-											<h6 text-right>or <span id="loginId" class="accent-color">Log in</span></h6>
+											<h6 text-right> or <span id="loginId" class="accent-color"> log in</span></h6>
 										</div>
 									</div>
 								</div>
 							</div>
+
+
 							<div class="top-soc-button">
-								<a href="" class="btn btn-sm btn-block btn-social btn-facebook">
-									<span class="fa fa-facebook"></span> Sign up with Facebook
-								</a>
-								<a href="" class="btn btn-sm btn-block btn-social btn-google">
-									<span class="fa fa-google"></span> Sign  with Google
-								</a>
-								<p><span>or with email</span></p>
+													<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-md-6 col-sm-6 col-6"><a href="" class="float-left btn btn-sm btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"></span>Facebook
+								</a></div>
+							<div class="col-md-6 col-sm-6 ml-md-auto col-6 ml-auto">	<a href="" class="float-right btn btn-sm btn-block btn-social btn-google">
+									<span class="fa fa-google"></span>Google
+								</a></div>
+						</div>
+					</div>
+							
+
+
+								<p><span>or  with email</span></p>
 							</div>
 
 							<div class="form-container">
@@ -105,22 +114,30 @@
 										At least 10 characters
 									</label>	
 
-									<div class="bottom-form-container flex">
-										<div class="controls" id="checked">
+
+
+
+
+									<div class="bottom-form-container">
+												<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-6">										<div class="controls" id="checked">
 											<div class="controls">
 												<span class="help-block text-danger"></span>
 												<label class="checkbox">
-													<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required data-validation-required-message="You must agree to the terms and conditions"><span>By registering, you apply </br> to the <a href="">privacy policy</a> and </br> <a href="">terms of service.</a></span>
+													<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required data-validation-required-message="You must agree to the terms and conditions"><span>By registering, you agree </br> to the <a href="">privacy policy</a> and </br> <a href="">terms of service.</a></span>
 												</label>
 											</div>
-										</div>
-										<div class="form-button">
+										</div></div>
+							<div class="col-md-6 col-sm-6 col-6 ml-md-auto">										<div class="form-button">
 											<button  class="btn" data-toggle="modal" data-target="#exampleModalLong">Create an account</button>
+										</div></div>
+						</div>
+					</div>
 
 
 
 
-										</div>
 									</div>
 								</form>
 							</div>
@@ -137,25 +154,27 @@
 							<div class="login-wrap">
 								<div class="container">
 									<div class="row">
-										<div class="col-md-6 col-7">
+										<div class="col-md-4 col-4">
 											<h6 class="h6 text-left">Log in</h6>
 										</div>
-										<div class="col-md-6 ml-md-auto  ml-auto col-5">
-											<h6 text-right>or <span id="createId" class="accent-color">Create an account</span></h6>
+										<div class="col-md-8 ml-md-auto  ml-auto col-8">
+											<h6 text-right>or <span id="createId" class="accent-color">create an account</span></h6>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="top-soc-button">
-								<a href="" class="btn btn-sm btn-block btn-social btn-facebook">
-									<span class="fa fa-facebook"></span> Sign in with Facebook
-								</a>
-								<a href="" class="btn btn-sm btn-block btn-social btn-google">
-									<span class="fa fa-google"></span> Sign in with Google
-								</a>
-								<p><span>or with email</span></p>
-							</div>
-
+						<div class="top-soc-button">
+													<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-md-6 col-sm-6 col-6"><a href="" class="float-left btn btn-sm btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"></span>Facebook
+								</a></div>
+							<div class="col-md-6 col-sm-6 ml-md-auto col-6 ml-auto">	<a href="" class="float-right btn btn-sm btn-block btn-social btn-google">
+									<span class="fa fa-google"></span>Google
+								</a></div>
+						</div>
+					</div>
+<p><span>or  with email</span></p>
 							<div class="form-container">
 								<form action="" class="main_form" novalidate method="post">
 
