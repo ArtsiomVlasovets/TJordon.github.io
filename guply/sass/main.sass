@@ -512,7 +512,7 @@ body
 	padding-bottom: 3px		
 
 .contact-us-form
-	width: 40%
+	width: 55%
 	height: auto
 	margin-top: 10%
 	h2
@@ -521,7 +521,7 @@ body
 	.control-group, input, textarea
 		text-align: left
 	textarea
-		line-height: 40px
+		line-height: 100px
 
 .about-us
 	padding-top: 0rem
@@ -544,7 +544,8 @@ body
 	.main-img
 		max-width: 70%
 		height: auto
-		margin-top: -30px
+		margin-top: -50px
+		margin-bottom: 50px
 .container-fluid
 	padding-left: 0px
 	padding-right: 0px
@@ -624,5 +625,45 @@ body
 				max-width: 80%
 				.nav-pills
 					padding-top: 20px
+
+
+.contact-us-form
+	.control-group
+		input
+			line-height: 65px
+			border: none
+			border-radius: 15px
+			font-size: 12px
+			font-family: "montserrat-SemiBold"
+			margin-bottom: 10px
+			&::placeholder
+				color: #929090
+
+		textarea
+			line-height: 100px
+			border: none
+			border-radius: 15px	
+			font-size: 12px
+			font-family: "montserrat-SemiBold"
+			margin-bottom: 10px
+			&::placeholder
+				color: #929090
+	.shadow 
+		box-shadow: 0 .5rem 1rem rgba(87,87,87,.1)!important
+.float-none
+	float: none
+.popup-contactUs
+	height: 80%
+	.bottom-form-container
+		margin-top: 30px
+		p
+			padding-top: 30px
+			font-size: 13px
+			color: #929090
+		button
+			text-transform: uppercase
+			border-radius: 30px
+			width: 150px
+
 
 @import "media" // Always at the end
