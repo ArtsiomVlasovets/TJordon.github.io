@@ -35,6 +35,7 @@ $(function() {
 		$('#join-block').hide();
 		$('#aboutUs-block').hide(0, function() {
 			$('#main-block').show();
+			$('#join-block').show();
 			$('#aboutUsId').show();
 		});
 	});
