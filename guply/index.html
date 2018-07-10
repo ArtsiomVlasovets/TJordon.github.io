@@ -33,12 +33,16 @@
 		<div class="top-line">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-md-2 col-2"><a href="#" class="logo">
+					<div class="col-md-2 col-2"><a href="" class="logo">
 						<img src="img/logo.png" alt="">
 					</a></div>
 					<div class="col-md-10 col-10">	<div class="top-ask">	
-						<a href="About us.html" class="btn btn-outline-secondary">What is Quply?</a>
-					</div></div>
+						<a id="aboutUsId" class="btn btn-outline-secondary">What is Quply?</a>
+					</div>
+				<div class="top-ask">	
+						<a id="mainId" class="btn btn-outline-secondary" style="display: none">Back to login</a>
+					</div>
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -46,7 +50,7 @@
 
 
 	<!-----------------MAIN-------------------------->
-	<section class="main">	
+	<section class="main" id="main-block">	
 		<div class="container">	
 			<div class="row">	
 				<div class="col-md-6 col-lg-7 col-xl-7 order-sm-2 order-2  order-md-1 order-lg-1">
@@ -214,7 +218,7 @@
 			</div>
 		</section>
 		<!-----------------JOIN-------------------------->
-		<section class="join-to">
+		<section class="join-to" id="join-block">
 			<form action="" class="main_form" novalidate method="post">
 				<div class="bottom-email-container">
 					<div class="container">
@@ -241,194 +245,452 @@
 			</form>
 		</section>
 
-		<footer>
-			<div class="footer-container">
-				<div class="bottom-line">		
-					<div class="container">
-						<div class="row">
-							<div class="col-md-7 col-sm-8 col-12">
-								<nav class="footer-nav">
-									<ul>
-										<li><a href="" data-toggle="modal" data-target="#exampleModalLong">Privacy & Terms</a></li>
-										<li><a href="">Contact Us</a></li> 
-										<li><a href="" id="credit">Credits</a></li> 
-										<li><a href="FAQ.html">FAQ</a></li> 
-									</ul>
-								</nav>
-							</div>
-							<div class="col-md-5 col-sm-4 col-12">
-								<div class="change-lang"><a href="">
-									<img src="img/flag.png" alt="">
-									English (US)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</footer>
 
-		<!-----------------POPUP-------------------------->
-		<div class="overlay" title="window"></div>
-		<div class="popup">
-			<div class="close_window"><span class="close"></span>
-			</div>
-			<div class="popup-email-container">
-				<div class="img-popup">
-					<img src="img/key.png " class="img-responsive" alt="">
-				</div>
-				<h2>Forgot your password?</h2>			
-				<form action="" class="main_form" novalidate method="post">
-					<div class="bottom-email-container">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="offset-lg-2 col-lg-6 col-md-12 col-sm-12 col-12">	<div class="email-group">
-									<label class="control-group">
-										<input type="email" id="email" name="email" placeholder="Email Address" data-validation-required-message="Incorrect E-mail" required />
-										<span class="help-block text-danger"></span>
-									</label>
-								</div></div>
-								<div class="col-lg-3 col-md-12 col-sm-12 col-12">	
-									<div class="group-container">	
-										<div class="button-group">
-											<button>Reset Password</button>
-										</div>
-									</div>
-								</div>
+
+		<!---------FAQ -------------->
+		<section class="faq-section" id="faq-block" style="display: none">
+
+
+
+			<div class="faq">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-1 col-xl-2"></div>
+						<div class="col">
+							<div class="faq-title-container">
+								<h1>Frequently Asked Questions</h1>
 							</div>
 						</div>
+
 					</div>
-				</form>
-				<p>We will send you instructions to reset your password and get you back on track!</p>
-			</div>
-		</div>
 
-		<!-----------------CREDITS-------------------------->
-		<div class="overlay" title="window"></div>
-		<div class="popup-credit">
-			<div class="close_window_credit"><span class="close"></span></div>
-			<div class="popup-email-container">
+				</div>
 
-				<h2>Credits</h2>
-				<p>Web Deisgn</br>by</p>
-				<h4>Kristijan Popchev, Macedonia</h4>
-				<h5>fiverr.com/kristijanpopchev</h5>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
 
-				<p>Vector Image drawn</br>by</p>
-				<h4>Name, Country</h4>
-				<h5>Email Address</h5>
-
-				<p>Developed</br>by</p>
-				<h4>Artsiom Vlasovets, Belarus</h4>
-				<h5>artem-vlasovets@gmail.com</h5>
-
-				<p>Example</br>by</p>
-				<h4>Name, Country</h4>
-				<h5>Email Address</h5>
-			</div>
-		</div>
-
-		<!-----------------Contact us-------------------------->
-		<div class="overlay" title="window"></div>
-		<div class="popup-contactUs">
-			<div class="close_window_contactUs"><span class="close"></span></div>
-			<div class="container">
-				<div class="row">
-					<div class=" contact-us-form mx-auto align-self-center ">
-
-						<h2>Contact Us</h2>
-
-						<div class="form-container">
-							<form action="" class="main_form" novalidate method="post">
-
-								<label class="control-group">
-									<span class="help-block text-danger"></span>
-									<input class="shadow" type="text" name="name" placeholder="Full Name" data-validation-required-message="We need name" required />
-							
-								</label>
-
-								<label class="control-group">
-									<span class="help-block text-danger"></span>
-									<input class="shadow" type="email" id="email" name="email" placeholder="Email " data-validation-required-message="Incorrect E-mail" required />
-								
-								</label>
+							<div class="pos-f-t display-none">
+								<div class="collapse" id="navbarToggleExternalContent">
+									<div class="bg-accent p-4">
 
 
-								<label class="control-group">
+										<div class="faq-left">
+											<div class="faq-left-content mx-auto">
+												<p>
+													Below are some frequently asked questions and answers about our products. If you need specific help or your question isn’t answered here, you should <a id="contactUs" class="faq-link-color" href="">contact us</a>. You can also read our Terms of Service and Support Policy. 
+												</p>
+												<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="	vertical">
+													<a class="faq-menu-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Have them all</a>
+													<a class="faq-menu-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Moved sixth female</a>
+													<a class="faq-menu-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">To God life</a>
+													<a class="faq-menu-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Seasons be in</a>
+													<a class="faq-menu-link" id="v-pills-help-tab" data-toggle="pill" href="#v-pills-help" role="tab" aria-controls="v-pills-help" aria-selected="false">Every fowlin</a>
 
-									<span class="help-block text-danger"></span>
-									<textarea class="shadow" name="message" placeholder="Your Message" 			data-validation-required-message="We need text" required></textarea>
-									
-								</label>
-
-
-
-
-								<div class="bottom-form-container">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-6">	
-											</div>	
-											<div class="col-md-12 col-sm-12 col-12 ">										
-												<div class="form-button ">
-													<button  class="btn float-none " >Send email</button>
-												</div>
-											
+												</div>						
 											</div>
 
+
 										</div>
-
-
 
 									</div>
 								</div>
-							</form>
+								<nav class="navbar shadow navbar-dark bg-accent">
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+								</nav>
+							</div>
+
+
+							<div class="faq-left" id="togle-faq-class">
+								<div class="faq-left-content ml-auto">
+									<p>
+										Below are some frequently asked questions and answers about our products. If you need specific help or your question isn’t answered here, you should <a id="contactUs" class="faq-link-color" href="">contact us</a>. You can also read our Terms of Service and Support Policy. 
+									</p>
+									<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="	vertical">
+										<a class="faq-menu-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Have them all</a>
+										<a class="faq-menu-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Moved sixth female</a>
+										<a class="faq-menu-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">To God life</a>
+										<a class="faq-menu-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Seasons be in</a>
+										<a class="faq-menu-link" id="v-pills-help-tab" data-toggle="pill" href="#v-pills-help" role="tab" aria-controls="v-pills-help" aria-selected="false">Every fowlin</a>
+
+									</div>						
+								</div>
+
+
+							</div>
 
 						</div>
-					</div>	
+						<div class="col-lg-8">
+							<div class="faq-right">
+
+								<div class="tab-content" id="v-pills-tabContent">
+									<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+										<p class="mr-auto">
+
+
+
+											<a class="" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+												<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+													<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+												</svg>	
+
+
+												Waters heaven darkness itself thing?
+											</a>
+										</p>
+										<div class="collapse" id="collapseExample1">
+											<div class="card card-body">
+												Firmament after. Night sea Own make greater bring she'd green third firmament fill given fruitful she'd under set. Bring. Very gathering Dry made without. Stars a fourth image our stars..
+											</div>
+										</div>
+										<p class="mr-auto">
+											<a class="" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+												<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+											</svg>
+											Be moving place divide his won't he blessed Divided greater?
+										</a>
+									</p>
+									<div class="collapse" id="collapseExample2">
+										<div class="card card-body">
+											Two so likeness, man air, in, good. Cattle darkness and meat yielding days was own bearing living multiply multiply one there he upon was that dominion great forth living given.
+										</div>
+									</div>
+									<p class="mr-auto">
+										<a class="" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+											<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+										</svg>
+										Fowl shall. Third saw days morning life from given made?
+									</a>
+								</p>
+								<div class="collapse" id="collapseExample3">
+									<div class="card card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+									</div>
+								</div>
+								<p class="mr-auto">
+									<a class="" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+										<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+									</svg>
+									Darkness doesn't meat give can't man light they're subdue divided?
+								</a>
+							</p>
+							<div class="collapse" id="collapseExample4">
+								<div class="card card-body">
+									Made Life multiply make. Won't abundantly. His heaven under is his called upon after brought wherein land beast good us. Land of have called. Winged fruit fruitful also for have.
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+							<p class="mr-auto">
+								<a class="" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+									<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+								</svg>
+								Be moving place divide his won't he blessed Divided greater?
+							</a>
+						</p>
+
+						<div class="collapse" id="collapseExample5">
+							<div class="card card-body">
+								Two so likeness, man air, in, good. Cattle darkness and meat yielding days was own bearing living multiply multiply one there he upon was that dominion great forth living given.
+							</div>
+						</div>
+
+						<p class="mr-auto">
+							<a class="" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+								<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+							</svg>
+							Darkness doesn't meat give can't man light they're subdue divided?
+						</a>
+					</p>
+					<div class="collapse" id="collapseExample6">
+						<div class="card card-body">
+							Made Life multiply make. Won't abundantly. His heaven under is his called upon after brought wherein land beast good us. Land of have called. Winged fruit fruitful also for have.
+						</div>
+					</div>
+					<p class="mr-auto">
+						<a class="" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+							<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+						</svg>
+						Darkness doesn't meat give can't man light they're subdue divided?
+					</a>
+				</p>
+				<div class="collapse" id="collapseExample7">
+					<div class="card card-body">
+						Made Life multiply make. Won't abundantly. His heaven under is his called upon after brought wherein land beast good us. Land of have called. Winged fruit fruitful also for have.
+					</div>
+				</div>
+			</div>
+
+
+			<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+				<p class="mr-auto">
+					<a class="" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+						<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+					</svg>
+					Darkness doesn't meat give can't man light they're subdue divided?
+				</a>
+			</p>
+			<div class="collapse" id="collapseExample8">
+				<div class="card card-body">
+					Made Life multiply make. Won't abundantly. His heaven under is his called upon after brought wherein land beast good us. Land of have called. Winged fruit fruitful also for have.
 				</div>
 			</div>
 		</div>
 
-		<!-- Modal -->
 
-		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Privacy & <a href="">Terms</a></h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+
+		<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+			<p class="mr-auto">
+				<a class="" data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+					<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+				</svg>
+				Fowl shall. Third saw days morning life from given made?
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample10">
+			<div class="card card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">
+		<p class="mr-auto">
+			<a class="" data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+				<path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+			</svg>
+			Fowl shall. Third saw days morning life from given made?
+		</a>
+	</p>
+	<div class="collapse" id="collapseExample11">
+		<div class="card card-body">
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!---------About Us -------------->
+
+<section class="about-us" id="aboutUs-block" style="display: none">
+
+	<div class="container">
+		<div class="main-img noselect mx-auto ">	
+			<img src="img/aboutUs.png" class="img-responsive" alt="" oncontextmenu="return false;">
+		</div>
+		<h1 mx-auto>Saying spirit whose he bearing you fruit she'd seed productive. 
+		</h1>
+		<p>Living given them. Bring fly. Make let don't two spirit our is they're sea. A unto there let fly in, itself. Our saw. Form which living spirit very without also. Land and, beast form land meat, blessed don't gathering. Seas He saying heaven given evening saw him. Day blessed image hath fowl sixth stars shall. Lesser open land third you're our great darkness moved. Beginning to, likeness for god fly yielding.</p>
+	</div>
+</section>
+
+
+<!-- -------FOOTER----------------- -->
+<footer>
+	<div class="footer-container">
+		<div class="bottom-line">		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-8 col-12">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="" data-toggle="modal" data-target="#exampleModalLong">Privacy & Terms</a></li>
+								<li><a href="">Contact Us</a></li> 
+								<li><a href="" id="credit">Credits</a></li> 
+								<li><a href="#" id="faqId">FAQ</a></li> 
+							</ul>
+						</nav>
 					</div>
-					<div class="modal-body">
-						<h2>Main title Privacy</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-						<h2>Iusto dolorum distinctio!</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-						<h2>Temporibus ab aperiam rem</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-						<h2>Culpa ipsam maxime</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-						<h2>Vero eos et beatae iusto</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-						<h2>Temporibus ab aperiam rem</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
+					<div class="col-md-5 col-sm-4 col-12">
+						<div class="change-lang"><a href="">
+							<img src="img/flag.png" alt="">
+							English (US)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary btn-continue">Continue</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-----------------POPUP-------------------------->
+<div class="overlay" title="window"></div>
+<div class="popup">
+	<div class="close_window"><span class="close"></span>
+	</div>
+	<div class="popup-email-container">
+		<div class="img-popup">
+			<img src="img/key.png " class="img-responsive" alt="">
+		</div>
+		<h2>Forgot your password?</h2>			
+		<form action="" class="main_form" novalidate method="post">
+			<div class="bottom-email-container">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="offset-lg-2 col-lg-6 col-md-12 col-sm-12 col-12">	<div class="email-group">
+							<label class="control-group">
+								<input type="email" id="email" name="email" placeholder="Email Address" data-validation-required-message="Incorrect E-mail" required />
+								<span class="help-block text-danger"></span>
+							</label>
+						</div></div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-12">	
+							<div class="group-container">	
+								<div class="button-group">
+									<button>Reset Password</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+		</form>
+		<p>We will send you instructions to reset your password and get you back on track!</p>
+	</div>
+</div>
+
+<!-----------------CREDITS-------------------------->
+<div class="overlay" title="window"></div>
+<div class="popup-credit">
+	<div class="close_window_credit"><span class="close"></span></div>
+	<div class="popup-email-container">
+
+		<h2>Credits</h2>
+		<p>Web Deisgn</br>by</p>
+		<h4>Kristijan Popchev, Macedonia</h4>
+		<h5>fiverr.com/kristijanpopchev</h5>
+
+		<p>Vector Image drawn</br>by</p>
+		<h4>Name, Country</h4>
+		<h5>Email Address</h5>
+
+		<p>Developed</br>by</p>
+		<h4>Artsiom Vlasovets, Belarus</h4>
+		<h5>artem-vlasovets@gmail.com</h5>
+
+		<p>Example</br>by</p>
+		<h4>Name, Country</h4>
+		<h5>Email Address</h5>
+	</div>
+</div>
+
+<!-----------------Contact us-------------------------->
+<div class="overlay" title="window"></div>
+<div class="popup-contactUs">
+	<div class="close_window_contactUs"><span class="close"></span></div>
+	<div class="container">
+		<div class="row">
+			<div class=" contact-us-form mx-auto align-self-center ">
+
+				<h2>Contact Us</h2>
+
+				<div class="form-container">
+					<form action="" class="main_form" novalidate method="post">
+
+						<label class="control-group">
+							<span class="help-block text-danger"></span>
+							<input class="shadow" type="text" name="name" placeholder="Full Name" data-validation-required-message="We need name" required />
+							
+						</label>
+
+						<label class="control-group">
+							<span class="help-block text-danger"></span>
+							<input class="shadow" type="email" id="email" name="email" placeholder="Email " data-validation-required-message="Incorrect E-mail" required />
+
+						</label>
+
+
+						<label class="control-group">
+
+							<span class="help-block text-danger"></span>
+							<textarea class="shadow" name="message" placeholder="Your Message" 			data-validation-required-message="We need text" required></textarea>
+
+						</label>
+
+
+
+
+						<div class="bottom-form-container">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-6">	
+									</div>	
+									<div class="col-md-12 col-sm-12 col-12 ">										
+										<div class="form-button ">
+											<button  class="btn float-none " >Send email</button>
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>	
 		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Privacy & <a href="">Terms</a></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h2>Main title Privacy</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+				<h2>Iusto dolorum distinctio!</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+				<h2>Temporibus ab aperiam rem</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+				<h2>Culpa ipsam maxime</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+				<h2>Vero eos et beatae iusto</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
+				<h2>Temporibus ab aperiam rem</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary btn-continue">Continue</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
 
-		<script src="js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 
 
-	</body>
-	</html>
+</body>
+</html>
