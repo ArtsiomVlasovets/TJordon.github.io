@@ -1,0 +1,431 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.faq
+		max-width: 100%
+		p
+			a
+				text-align: left
+		.faq-title-container
+			border-bottom: 1px solid #E8EFF2
+			h1
+				padding: 50px 0
+				text-align: left	
+		.faq-left
+			padding-top: 50px
+			padding-bottom: 200px
+			color: #fff
+			background-color: $accent
+			&-content
+				max-width: 73%
+				padding-right: 45px
+		.container
+			padding: 0
+		.control-group 
+			input
+				width: 100%
+	.popup, .popup-credit
+		height: 90%
+	.welcome 
+		h6 
+			font-size: 1rem
+	.popup
+		width: 70%
+		height: 80%	
+	.bottom-email-container
+		h2
+			font-size: 26px
+			text-align: right
+			margin: 0 auto
+			padding-top: 10px
+		.email-group
+			padding-left: 20px
+	.popup-email-container
+		p
+			font-size: 15px
+		.bottom-email-container 
+			.email-group 
+				input
+					text-align: center
+					font-size: 13px !important
+					height: 37px
+
+		button 
+			margin-left: -10px
+			font-family: "montserrat-Regular", sans-serif
+			font-size: 13px
+			padding-left: 5px
+			padding-right: 6px
+			padding-top: 0px
+			padding-bottom: 5px
+			height: 37px
+		h2 
+			font-size: 35px
+			padding-top: 30px
+	.contact-us-form
+		width: 65%
+// ≥992px
++media-breakpoint-down(md)
+	.container
+		.row
+			padding: 0
+	.popup
+		height: 90%
+	.popup-email-container
+		.bottom-email-container
+			padding-top: 0px
+		.img-popup
+			img
+				max-width: 20%
+		p
+			font-size: 13px
+			max-width: 60%
+		h2 
+			font-size: 25px
+			padding-top: 20px
+		.bottom-email-container .email-group 
+			padding-left: 0px
+			width: 65%
+			margin: 0 auto
+		.group-container
+			margin: 0 auto
+			max-width: 69%
+			.button-group
+				width: 95%
+				margin: 0 auto !important
+				button
+					float: none
+					width: 100%
+					margin: 0 auto
+	.top-ask
+		font-size: 13px
+	.bottom-email-container
+		h2
+			font-size: 19px
+			padding-top: 10px
+		.email-group
+			padding-left: 20px
+
+	.welcome 
+		h6 
+			font-size: 0.9rem
+	.form-container
+		max-width: 100%
+	.bottom-form-container
+		button
+			font-size: 11px
+			padding: 3px 5px
+	.popup-credit
+		.popup-email-container
+			h2
+				font-size: 35px
+				font-family: "Montserrat-Bold",sans-serif
+				margin-bottom: 30px
+			p
+				font-family: "Montserrat-LightItalic",sans-serif
+				margin-top: 30px
+				font-size: 12px
+			h5
+				margin-top: -20
+				color: #8B9ABA
+				font-size: 12px
+			h4
+				margin-bottom: 0
+				font-size: 10px
+	.contact-us-form
+		.bottom-form-container button 
+			padding: 3px 12px
+	.faq
+		max-width: 100%
+		.faq-title-container
+			h1
+				text-align: center
+	.pos-f-t
+		.faq-left
+			padding-top: 50px
+			padding-bottom: 50px
+			color: #fff
+			background-color: $accent
+			&-content
+				max-width: 80%
+				text-align: center
+				padding-right: 0px
+				.nav-pills
+					padding-top: 0px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.welcome
+		margin: 0 auto
+		max-width: 65%
+	.login-wrap
+		max-width: 100%
+	.email-group
+		.control-group
+			input
+				width: 100%
+				margin-right: 5px
+	#sign 
+		padding-left: 45px
+		padding-right: 45px
+	.popup-email-container
+		h2
+			font-size: 23px
+		.img-popup
+			img
+				max-width: 25%
+	.footer-container
+		font-size: 12px
+	.bottom-email-container
+		h2
+			margin-bottom: 10px
+			font-size: 19px
+			padding-top: 10px
+			text-align: center
+		.email-group
+			padding-left: 20px
+	.control-group input
+		font-family: montserrat-Regular,sans-serif
+		font-size: 14px!important
+		margin: 0 auto
+		margin-bottom: 5px
+		display: block
+		width: 100%
+	.contact-us-form
+		width: 70%
+		height: auto
+		margin-top: 10%
+		h2
+			font-size: 20px
+			text-align: left
+		.control-group, input, textarea
+			text-align: left
+			input, textarea
+				font-size: 12px!important
+		textarea
+			line-height: 35px
+
+	.about-us
+		padding-top: 6rem
+		padding-bottom: 5rem
+		h1
+			max-width: 15em
+			font-size: 1.7rem
+		p
+			color: #5E6170
+			max-width: 34rem
+			padding-top: 20px
+			font-size: 0.9rem
+
+		.main-img
+			max-width: 70%
+			height: auto
+			margin-top: -10px
+// ≥576px
+
++media-breakpoint-down(xs)
+	.btn-social.btn-sm>:first-child
+		line-height: 25px
+		width: 23px
+		font-size: 1.5em	
+	.top-soc-button
+		.btn
+			padding-top: 8px
+			padding-bottom: 8px
+			padding-left: 27px
+			padding-right: 5px
+			margin-bottom: 6px
+			font-size: 9px
+			max-width: 100%
+			text-align: center
+			span
+				padding-top: 3px
+		.btn-block
+			margin-top: 0
+			margin-right: 5px
+	.popup-email-container
+		.bottom-email-container 
+			.email-group 
+				padding-left: 0px
+				width: 80%
+				margin: 0 auto
+				margin-bottom: -10px
+				font-size: 12px
+				input
+					font-size: 12px !important
+					height: 37px
+		.group-container
+			margin: 0 auto
+			max-width: 84%
+		.img-popup
+			img
+				max-width: 30%
+		p
+			font-size: 12px
+			max-width: 80%
+		h2 
+			font-size: 20px
+			padding-top: 20px	
+	.top-line
+		.top-ask
+			padding-top: 5px
+			font-size: 9px
+			a
+				padding: 4px 10px
+	.footer-nav
+		margin-bottom: -3px
+	.footer-container
+		margin: 0 auto
+		text-align: center
+	.change-lang
+		margin: 0 auto
+		float: none
+		margin-right: 10px
+		a
+			font-size: 12px
+	.footer-nav
+		ul
+			padding-left: 0px
+			li
+				display: block
+				margin-left: 0
+				margin-bottom: 8px
+				font-size: 12px
+				&:last-child
+					//display: none	
+	.button-group
+		width: 100%
+		margin: 0 auto !important
+		button
+			float: none
+			width: 100%
+			margin: 0 auto
+	.group-container
+		margin: 0 auto
+		max-width: 75%
+	.bottom-email-container .email-group 
+		padding-left: 0px
+		width: 75%
+		margin: 0 auto
+	.welcome 
+		max-width: 70%
+		h6
+			font-size: 0.8rem
+	.controls
+		max-width: 50px
+	.checkbox
+		font-size: 8px
+	.top-line 
+		.top-ask 
+			a 
+			 font-size: 10px
+			 padding: 2px 4px
+	.logo
+		img
+			max-width: 150px
+			height: auto
+			margin-left: -15px
+	.bottom-form-container 
+		button 
+			font-size: 8px
+			padding: 0px 5px
+	.control-group
+		input
+			width: 100%
+	.email-group
+		.control-group
+			input 
+				width: 100%
+	.popup-credit
+		.popup-email-container
+			p 
+				margin-top: 20px
+				font-size: 11px
+				mnax-width: 100% 
+			h2
+				font-size: 24px
+				margin-bottom: 0px
+				padding-top: 0
+			h5
+				font-size: 10px
+	.popup-credit .close_window_credit .close
+		position: absolute
+		right: 5px
+		top: -1px
+		width: 25px
+		height: 25px
+		opacity: .3
+	#sign 
+		padding-left: 35px
+		padding-right: 35px
+		padding-top: 0px
+		padding-bottom: 0px
+	#remember 
+		font-size: 11px
+	.contact-us-form
+		width: 80%
+		h2
+			font-size: 18px
+		.control-group
+			font-size: 9px
+			input, textarea
+				font-size: 10px!important
+		.bottom-form-container button 
+			padding: 0px 20px
+			margin-top: -5px
+	.about-us
+		padding-top: 5rem
+		padding-bottom: 4rem
+		h1
+			max-width: 15em
+			font-size: 1.2rem
+		p
+			color: #5E6170
+			max-width: 19rem
+			padding-top: 20px
+		.main-img
+			min-width: 100%
+	.faq
+		max-width: 100%
+		.faq-title-container
+			h1
+				font-size: 2.1rem
+				text-align: center
+		.faq-right
+			padding-bottom: 50px
+			a
+				font-size: 13px	
+	.pos-f-t
+		.faq-left
+			padding-top: 50px
+			padding-bottom: 50px
+			color: #fff
+			background-color: $accent
+			&-content
+				max-width: 80%
+				text-align: center
+				padding-right: 0px
+				.nav-pills
+					padding-top: 0px	
+
+
+			
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

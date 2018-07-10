@@ -1,0 +1,628 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	overflow-x: hidden!important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.container
+	padding: 0
+	.row
+		padding: 0
+
+.fixed 
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+.noselect 
+	-moz-user-select: none
+	-webkit-user-select: none
+	-ms-user-select: none
+	-o-user-select: none
+	user-select: none
+
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.flex
+	display: flex
+
+header
+	border-bottom: 	1px solid #E8EFF2
+	background-color: #fff
+
+
+.top-line
+	margin: 0 auto
+	max-width: 85%
+	box-sizing: border-box
+	img
+		margin-bottom: 10px
+	.top-ask
+		float: right
+
+
+	.top-ask
+		a
+			font-size: 14px
+			padding: 3px 10px
+			display: block
+
+
+section
+	border-bottom: 	1px solid #E8EFF2
+	padding-bottom: 40px
+
+.header-composition
+	text-align: center
+	position: relative
+	margin-top: 40px
+	p
+		margin-top: 40px
+	.button
+		margin-top: 25px				
+.welcome
+	box-sizing: border-box
+	.text-left
+		text-align: left
+	.text-right
+		text-align: right
+	h6
+		text-align: right
+		font-size: 1.1rem
+		margin-top: 5px
+		font-family: "montserrat-Regular", sans-serif
+
+	img
+		display: inline-block
+		margin-top: -25px
+		//float: right
+	h2
+		font-size: 30px
+		display: inline-block
+		font-family: "montserrat-ExtraLight", sans-serif
+		text-align: center
+		margin-bottom: 20px
+		span
+			font-family: "montserrat-BoldItalic", sans-serif
+
+	p
+		padding-top: 20px
+		text-align: center
+		font-family: "montserrat-SemiBoldItalic", sans-serif
+		font-size: 12px
+		display: flex
+		align-items: center
+		white-space: nowrap
+		margin: 0
+		margin-bottom: -10px
+		span
+			margin: 0 10px
+		&::before, &::after
+			content: ''
+			height: 1px
+			width: 100%
+			position: relative
+			background-color: #E6E6E6
+			display: inline-block
+#loginId, #createId
+	cursor: pointer
+	&:hover
+		opacity: 0.6
+.login-wrap
+	margin: 0 auto
+	max-width: 100%
+
+
+
+.form-container
+	max-width: 100%	
+	text-align: center
+	margin: 0 auto		
+.main_form
+	margin-top: 30px
+	button
+		border: none
+		color: #fff
+		line-height: 40px
+		font-size: 13px
+		text-transform: uppercase
+		margin-top: 10px
+		float: right
+		border-radius: 2px
+		cursor: pointer
+.control-group
+	display: block
+	margin-bottom: 20px
+	font-family: "montserrat-Italic", sans-serif
+	font-size: 12px
+	.color_element
+		font-weight: 700
+		font-size: 18px
+	.text-danger
+		font-size: 11px
+		margin-top: 5px
+		display: block
+		color: red
+		ul,
+		li
+			margin: 0
+			padding: 0
+			list-style-type: none
+	input,
+	textarea
+		font-family: "montserrat-Regular", sans-serif
+		font-size: 16px !important
+		margin: 0 auto
+		margin-bottom: 5px
+		display: block
+		width: 100%
+		border: 1px solid #ccc
+		border-radius: 5px 
+		margin-top: 5px
+		line-height: 30px
+		text-indent: 12px
+		font-size: 12px
+		text-align: center
+		background-color: transparent
+
+.bottom-form-container, .group-container
+	margin: 0 auto
+	max-width: 100%
+	justify-content: space-between
+	.btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle 
+		color: #fff;
+		//background-color: #1e7e34
+		border-color: darken($accent, 25%)
+	button	
+		padding: 3px 10px
+		margin-top: 4px
+		color: #fff
+		text-transform: none
+		background-color: $accent
+		font-family: "montserrat-Bold", sans-serif
+		box-shadow: 0px 2px 6px #575757
+		transition: all .2s ease
+		cursor: pointer
+		&:hover
+			background-color: darken($accent, 10%)
+			box-shadow: 0px 8px 18px -3px #575757
+			transform: scale(1.015)
+		&:active
+			border-color: $accent
+			box-shadow: 0px 2px 6px #575757
+			transform: scale(.985)
+#sign
+	padding-left: 35px
+	padding-right: 35px
+.checkbox
+	font-family: "montserrat-Regular", sans-serif
+	font-size: 11px 
+	margin-left: -20px
+	display: block
+	float: left
+	margin-left: 1px
+	padding-left: -24px
+	width: 211px
+	text-align: left
+	display: block
+	input[type="checkbox"]
+		display: inline-block
+		float: left
+		margin-top: 4px
+		margin-right: 5px
+		margin-bottom: 20px
+		width: 25px
+		height: 17px
+		border-radius: 2px
+		background: none
+#remember
+	font-size: 12px
+	display: inline-block
+	padding-top: 2px
+.bottom-email-container, .popup-email-container
+	padding-top: 20px
+	padding-bottom: 40px
+	input
+		text-align: left
+		height: 53px
+		width: 100%
+	button
+		padding-left: 40px
+		padding-right: 40px
+		height: 49px
+		text-transform: none
+		float: left
+		margin-top: 5px
+		padding-top: 3px
+		padding-bottom: 3px
+		padding-left: 50px
+		padding-right: 50px
+		color: #fff
+		text-transform: none
+		font-family: "montserrat-Bold", sans-serif
+	h2
+		font-family: "montserrat-Medium", sans-serif
+		font-size: 30px
+		text-align: right
+		margin: 0 auto
+		padding-top: 10px
+	.email-group
+		padding-left: 30px
+	.button-group
+		margin-left: -20px
+footer
+	background-color: #FDFCFC		
+	padding: 5px
+.footer-container
+	padding-top: 10px
+	margin: 0 auto
+	a
+		text-decoration: none
+		color: #000
+.footer-nav
+	ul
+		margin-bottom: 3px
+		li
+			list-style-type: none
+			display: inline
+			margin-left: 20px
+			font-size: 14px
+			a
+				text-decoration: none
+				color: #000
+				&:hover
+					color: #575757
+.change-lang
+	font-size: 14px
+	float: right
+	a
+		&:hover
+			color: #575757
+	.fa
+		margin-left: 5px
+
+
+.accent-color
+	color: $accent
+.top-soc-button
+	margin: 10px auto
+	max-width: 100%
+	a
+		font-family: "montserrat-Medium", sans-serif
+		font-size: 12px
+		color: #fff
+		text-align: center
+	.btn
+		height: auto
+		display: inline-block
+		max-width: 160px
+		border: none
+		padding-top: 8px
+		padding-bottom: 8px
+		padding-left: 20px
+		span
+			padding-top: 3px
+			font-size: 1.5 rem
+
+	.btn-block
+		margin-top: 0
+
+	.btn-google
+		//background-color: #B15047
+		span
+			background-color: #DD5144
+	.btn-facebook
+		//background-color: #344974
+		span
+			background-color: #3B5998
+
+.modal-body
+	h2
+		margin-bottom: 50px
+	p
+		margin-bottom: 50px
+
+#open_window
+	color: #000
+
+.popup-email-container
+	.button-group 
+		margin-top: 3px
+	position: relative
+	h2
+		text-align: center
+	.img-popup
+		text-align: center
+		padding-top: 30px
+		height: 50%
+		img
+			display: inline-block
+			max-width: 16%
+	.email-group
+		padding: 50px
+		max-width: 50% 
+.popup-email-container
+	text-align: center
+	.email-group 
+		padding: 0px
+		max-width: 95%
+		ml50
+.popup-email-container 
+	button 
+		margin-left: -10px
+		font-family: "montserrat-Regular", sans-serif
+		font-size: 16px
+		padding-left: 8px
+		padding-right: 8px
+	p
+		font-family: "montserrat-Regular", sans-serif
+		font-size: 16px
+		padding: 20px auto
+		max-width: 48%
+		margin: 0 auto
+
+
+
+.popup-email-container 
+	h2 
+		font-family: "montserrat-Medium",sans-serif
+		font-size: 35px
+		padding-top: 30px
+
+.overlay
+	background: $gradient
+	bottom: 0
+	cursor: default
+	left: 0
+	opacity: 0
+	position: fixed
+	right: 0
+	top: 0
+	visibility: hidden
+	z-index: 99999
+	transition: opacity .5s
+
+.popup, .popup-credit, .popup-contactUs
+	overflow-y: scroll
+	background-color: #fff
+	//border: 3px solid #fff
+	display: inline-block
+	left: 50%
+	top: 50%
+	opacity: 0
+	padding: 15px
+	width: 50%
+	height: 70%
+	position: fixed
+	//text-align: justify
+	visibility: hidden
+	z-index: 999999
+	transform: translate(-50%, -50%)
+	transition: opacity .5s, top .5s
+	.close_window, .close_window_credit, .close_window_contactUs
+		z-index: 99
+		width: 60px
+		height: 60px
+		position: absolute
+		padding: 1px 9px 4px 9px
+		top: 10px
+		right: 10px
+		cursor: pointer
+		color: #000
+		text-align: center
+		.close
+			position: absolute
+			right: 5px
+			top: 5px
+			width: 32px
+			height: 32px
+			opacity: 0.3
+			&:hover
+				opacity: 1
+			&:before, &:after
+				position: absolute
+				left: 15px
+				content: ' '
+				height: 33px
+				width: 2px
+				background-color: #333
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+.popup-credit
+	.popup-email-container
+		h2
+			font-size: 45px
+			font-family: "Montserrat-Bold",sans-serif
+			margin-bottom: 30px
+			padding-top: 10px
+		p
+			font-family: "Montserrat-LightItalic",sans-serif
+			margin-top: 30px
+			font-size: 13px
+		h5
+			margin-top: -20
+			color: $accent
+		h4
+			margin-bottom: 0
+.control-group .text-danger 
+	color: $accent
+body
+	input:focus:required:invalid
+		border-color: $accent
+
+.modal-header
+	a
+		color: $accent
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			color: lighten($accent, 20%)
+
+.modal-footer
+	.btn-primary 
+		color: #fff
+		background-color: $accent
+		border-color: $accent
+		transition: all 0.3 ease 
+		&:hover
+			background-color: darken($accent, 11%)
+#sign
+	padding-left: 41px
+	padding-right: 49px
+	padding-top: 2px
+	padding-bottom: 3px		
+
+.contact-us-form
+	width: 40%
+	height: auto
+	margin-top: 10%
+	h2
+		font-family:  "montserrat-Bold"
+		text-align: left
+	.control-group, input, textarea
+		text-align: left
+	textarea
+		line-height: 40px
+
+.about-us
+	padding-top: 6rem
+	padding-bottom: 5rem
+	h1
+		max-width: 15em
+		font-size: 2.4rem
+		text-align: center
+		margin: 0 auto
+		font-family: "montserrat-Bold", sans-serif
+	p
+		padding-top: 15px
+		color: #52575dfa
+		max-width: 45rem
+		margin-left: auto
+		margin-right: auto
+		font-size: 1.2rem
+		text-align: center
+		font-family: "montserrat-Medium", sans-serif
+	.main-img
+		max-width: 70%
+		height: auto
+		margin-top: -10px
+.container-fluid
+	padding-left: 0px
+	padding-right: 0px
+.faq-section
+	padding-bottom: 0
+.faq
+	max-width: 100%
+	p
+		a
+			text-align: left
+	.faq-title-container
+		border-bottom: 1px solid #E8EFF2
+		h1
+			padding: 50px 0
+			text-align: left	
+	.faq-left
+		padding-top: 50px
+		padding-bottom: 200px
+		color: #fff
+		background-color: $accent
+		&-content
+			max-width: 48%
+			padding-right: 45px
+			.nav-pills
+				padding-top: 20px
+			p
+			.faq-menu-link
+				font-family: "montserrat-Medium"
+				text-transform: uppercase
+				text-decoration: none
+				color: #fff
+				padding-top: 10px
+				transition: color .3s ease
+				&:hover
+					color: darken(#fff, 60%)
+			.active
+				color: darken(#fff, 60%)
+			.faq-link-color
+				color: darken(#fff, 60%)
+				transition: color .3s ease
+				&:hover
+					color: darken(#fff, 20%)
+	.faq-right
+		padding-top: 50px
+		.card-body
+			margin-bottom: 20px
+			font-size: 13px
+			max-width: 70%
+			color: #455963
+		.tab-content
+			padding-left: 15px
+		.fa
+			font-size: 25px
+			margin-right: 5px
+			color: #455963
+		a
+			text-decoration: none
+			font-size: 20px	
+			color: #455963
+			transition: color .3s ease
+			&:hover
+				color: $accent		
+.display-none
+	display: none	
+.pd-0
+	padding: 0px
+
+.bg-accent
+	background-color: $accent
+	.pos-f-t
+		.faq-left
+			padding-top: 50px
+			padding-bottom: 50px
+			color: #fff
+			background-color: $accent
+			&-content
+				max-width: 80%
+				.nav-pills
+					padding-top: 20px
+
+@import "media" // Always at the end
