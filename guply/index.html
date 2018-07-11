@@ -98,13 +98,13 @@
 
 								<label class="control-group">
 									<span class="help-block text-danger"></span>
-									<input type="text" name="name" placeholder="Name" data-validation-required-message="We need name" required />
+									<input type="text" name="name" placeholder="Name" data-validation-required-message="Please enter your username or email" required />
 									Your full name (optional)
 								</label>
 
 								<label class="control-group">
 									<span class="help-block text-danger"></span>
-									<input type="text" name="username" placeholder="Username*" data-validation-required-message="We need username" required />
+									<input type="text" name="username" placeholder="Username*" data-validation-required-message="Please enter your username" required />
 									Unique no domain names, no spaces, short
 								</label>
 
@@ -116,7 +116,7 @@
 
 								<label class="control-group">
 									<span class="help-block text-danger"></span>
-									<input type="password" name="password" placeholder="Password*" data-validation-required-message="Incorrect E-mail" required />
+									<input type="password" name="password" placeholder="Password*" data-validation-required-message="Please enter your password" required />
 									At least 10 characters
 								</label>	
 
@@ -131,7 +131,11 @@
 														<div class="controls">
 															<span class="help-block text-danger"></span>
 															<label class="checkbox">
-																<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" data-validation-required-message="You must agree to the terms and conditions" required /><span>By registering, you agree </br> to the <a href="#" data-toggle="modal" data-target="#exampleModalLong3">privacy policy</a> and </br> <a href="#" data-toggle="modal" data-target="#exampleModalLong4">terms of service.</a></span>
+																<input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" data-validation-required-message="You must agree to the privacy policy & terms of service" required /><span>By registering, you agree </br> to the <a href="#" data-toggle="modal" data-target="#exampleModalLong3">privacy policy</a> and </br> 
+															<div class="list-example">
+																<a href="#item-test1" data-toggle="modal" data-target="#exampleModalLong3">terms of service.</a>
+																</div>
+																</span>
 															</label>
 														</div>
 													</div>
@@ -188,12 +192,12 @@
 
 									<label class="control-group">
 										<span class="help-block text-danger"></span>
-										<input type="text" name="name" placeholder="Email or Username" data-validation-required-message="We need name" required />
+										<input type="text" name="name" placeholder="Email or Username" data-validation-required-message="Please enter your username or email " required />
 									</label>
 
 									<label class="control-group">
 										<span class="help-block text-danger"></span>
-										<input type="password" name="password" placeholder="Password*" data-validation-required-message="Incorrect E-mail" required />
+										<input type="password" name="password" placeholder="Password*" data-validation-required-message="Please enter your password" required />
 										<a href="" id="open_window">Forgot password?</a>
 									</label>	
 
@@ -752,9 +756,11 @@
 <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Privacy Policy</h5>
-
+		<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle"> Privacy policy</h5>
+				<div id="list-example" >
+					<a  href="#list-item-5">				<h5 class="modal-title" id="exampleModalLongTitle"> Terms of service</h5></a>
+				</div>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -772,7 +778,17 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
 					<h2>Vero eos et beatae iusto</h2>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?
-					<h2 id="list-item-3">Temporibus ab aperiam rem</h2>
+						<div class="modal-header">
+				<div id="list-example" >
+				<h5 id="list-item-5" class="modal-title" id="exampleModalLongTitle"> Terms of service</h5>
+				</div>
+
+			</div>
+					<h2 id="item-test1">Temporibus ab aperiam rem</h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
+							<h2 >Temporibus ab aperiam rem</h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
+							<h2 >Temporibus ab aperiam rem</h2>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsam maxime, quidem qui, ut quos ratione voluptate consequatur cumque corporis vitae quasi vel vero eos et beatae iusto dolorum distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vitae ea facilis rerum ducimus. Sunt, fuga ipsa nam doloremque veniam, temporibus ab aperiam rem, dolore voluptatibus, reiciendis architecto exercitationem porro?	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut animi nobis, nesciunt, sed aspernatur ipsum quae error architecto. Harum molestias, ex. Laborum aspernatur, odit, consequatur iusto quibusdam aut obcaecati. Itaque.
 
 				</div>
@@ -780,10 +796,8 @@
 			</div>
 			
 			<div class="modal-footer">
-				<p calss="mr-auto">
-					<a href="#" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalLong4">Term of service</a>
-				</p>
-				<div class="privacy-btn">
+
+				<div class="privacy-btn ml-auto">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
