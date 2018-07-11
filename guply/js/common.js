@@ -96,6 +96,16 @@ $(function() {
 		e.preventDefault();
 	});
 
+
+	setInterval(function(){	if($('.modal').hasClass('show')){
+	
+		$('html').css('overflow-y', 'hidden')
+	}else{
+		$('html').css('overflow-y', 'auto')
+		;
+	}}, 100)
+
+
 	setInterval(function() {
 		var pos = $('.pos-f-t');
 		var faq = $('#togle-faq-class');
