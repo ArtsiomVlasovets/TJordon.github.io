@@ -29,7 +29,7 @@ $(function() {
 		});
 	});
 
-		$('#mainId').click(function(){
+		$('#mainId, #logoId').click(function(){
 		$('#faq-block').hide();
 		$('#mainId').hide();
 		$('#join-block').hide();
@@ -47,6 +47,25 @@ $(function() {
 			$('#faq-block').show();
 		});
 	});
+		
+/*
+	var createToggle = $('#createAcountId');
+
+		function test(){
+			if($('#mainFormId').hasClass('error')){
+			$('#exampleModalLong').modal('hide');
+			}
+			else{
+			$('#exampleModalLong').modal('show');
+			}
+		}
+
+	 
+		createToggle.click(function(){	
+			setTimeout(test, 10);
+		});
+*/
+
 
 
 
