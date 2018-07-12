@@ -39,13 +39,13 @@ body,
 		outline: 1px solid slategrey
 	.modal-dialog
 		&::-webkit-scrollbar
-			width: 5px
+			width: 13px
 		&::-webkit-scrollbar-track
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
 		&::-webkit-scrollbar-thumb
-			background-color: #E2E2E3
-			opacity: 0.1
-			outline: 1px solid slategrey
+			background-color: #fff
+			opacity: 0.2
+			//outline: 1px solid slategrey
 			border-radius: 10px
 		
 .container
@@ -86,8 +86,10 @@ b, strong
 	display: flex
 
 header
-	border-bottom: 	1px solid #E8EFF2
 	background-color: #fff
+	margin-top: -15px
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.2)
+
 
 
 .top-line
@@ -101,6 +103,7 @@ header
 
 
 	.top-ask
+		margin-top: 15px
 		a
 			font-size: 14px
 			padding: 3px 10px
@@ -198,8 +201,8 @@ section
 		font-weight: 700
 		font-size: 18px
 	.text-danger
-		font-size: 11px
-		margin-top: 5px
+		font-size: 8px
+		margin-top: 0px
 		display: block
 		color: red
 		ul,
@@ -207,6 +210,7 @@ section
 			margin: 0
 			padding: 0
 			list-style-type: none
+			margin-top: -18px
 	input,
 	textarea
 		font-family: "montserrat-Regular", sans-serif
@@ -225,9 +229,10 @@ section
 		background-color: transparent
 .controls
 	.text-danger
+		margin-left: 30px
 		text-align: left
-		font-size: 11px
-		margin-top: 5px
+		font-size: 8px
+		margin-top: 0px
 		display: block
 		color: red
 		ul,
@@ -235,6 +240,8 @@ section
 			margin: 0
 			padding: 0
 			list-style-type: none
+			margin-top: -26px
+	
 .bottom-form-container, .group-container
 	margin: 0 auto
 	max-width: 100%
@@ -261,6 +268,44 @@ section
 			border-color: $accent
 			box-shadow: 0px 2px 6px #575757
 			transform: scale(.985)
+.bottom-form-container
+	margin-top: 30px		
+.bottom-email-container, .popup-email-container, .popup-contactUs
+	.control-group
+		.text-danger
+			font-size: 10px
+			margin-top: 0px
+			display: block
+			color: red
+			ul,
+			li
+				margin: 0
+				padding: 0
+				list-style-type: none
+				margin-top: 0px	
+.popup-email-container
+	.bottom-email-container
+		span
+			text-align: left
+#login-form-container
+	.control-group
+		.text-danger
+			font-size: 8px
+			margin-top: 0px
+			padding-top: 5px
+			ul
+				li
+					margin: 0
+					padding: 0
+					list-style-type: none
+					margin-top: -23px
+					&:first-child
+						margin-top: -20px
+		input,
+		textarea
+			margin-bottom: 5px
+
+
 #sign
 	padding-left: 35px
 	padding-right: 35px
