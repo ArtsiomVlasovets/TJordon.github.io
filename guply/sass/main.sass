@@ -37,7 +37,7 @@ body,
 	&::-webkit-scrollbar-thumb
 		background-color: #E2E2E3
 		outline: 1px solid slategrey
-	.modal-dialog
+	.modal-dialog, 
 		&::-webkit-scrollbar
 			width: 13px
 		&::-webkit-scrollbar-track
@@ -48,6 +48,19 @@ body,
 			opacity: 0.2
 			//outline: 1px solid slategrey
 			border-radius: 10px
+	.popup ,.popup-credit, .popup-contactUs
+		&::-webkit-scrollbar
+			width: 10px
+			margin-left: 25px
+		&::-webkit-scrollbar-track
+			border-radius: 0 12px 12px 0
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
+		&::-webkit-scrollbar-thumb
+			height: 30px
+			background-color: #E6E6E6
+			opacity: 0.2
+			//outline: 1px solid slategrey
+			border-radius: 5px			
 		
 .container
 	padding: 0

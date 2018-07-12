@@ -153,6 +153,8 @@ var clickPrivacy = $("#privacyLink");
 		;
 	}}, 100)
 
+	
+
 
 	setInterval(function() {
 		var pos = $('.pos-f-t');
