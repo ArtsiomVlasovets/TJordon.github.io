@@ -14,7 +14,6 @@ html
 	overflow-y: auto
 	background: none
 body
-
 	opacity: 1
 	margin-top: 90px
 	font-size: 16px
@@ -40,15 +39,21 @@ body,
 	&::-webkit-scrollbar-thumb
 		background-color: #E2E2E3
 		outline: 1px solid slategrey
-	.modal-dialog, 
+	.modal-dialog 
 		&::-webkit-scrollbar
+			cursor: pointer
+			width: 0px	
+	.modal-content 
+		&::-webkit-scrollbar
+			cursor: pointer
 			width: 13px
 		&::-webkit-scrollbar-track
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
 		&::-webkit-scrollbar-thumb
 			height: 30px
-			background-color: #fff
+			background-color: #E6E6E6
 			opacity: 0.2
+			border: 1px solid #D0D0D0 
 			//outline: 1px solid slategrey
 			border-radius: 10px
 	.popup ,.popup-credit, .popup-contactUs
@@ -63,7 +68,8 @@ body,
 			background-color: #E6E6E6
 			opacity: 0.2
 			//outline: 1px solid slategrey
-			border-radius: 5px			
+			border-radius: 5px
+			border: 1px solid #D0D0D0			
 		
 .container
 	padding: 0
@@ -115,6 +121,8 @@ header
 	box-sizing: border-box
 	img
 		margin-bottom: 10px
+
+
 	.top-ask
 		float: right
 
@@ -125,7 +133,10 @@ header
 			font-size: 14px
 			padding: 3px 10px
 			display: block
-
+#mainImgId
+	img
+		margin-top: -30px
+		margin-left: -12px
 
 section
 	border-bottom: 	1px solid #E8EFF2
@@ -644,6 +655,9 @@ body
 		height: auto
 		margin-top: 30px
 		margin-bottom: 50px
+		img
+			max-width: 80%
+			margin: auto
 .container-fluid
 	padding-left: 0px
 	padding-right: 0px
@@ -771,9 +785,12 @@ body
 .modal
 	overflow-y: hidden
 	.modal-dialog
-		height: 95%
+		height: 93%
 		overflow-y: auto
+	.modal-header
+		padding-bottom: 45px		
 	.modal-footer
+		padding: 40px
 		justify-content: space-between
 		a
 			font-size: 18px
@@ -782,6 +799,12 @@ body
 			transition: color .2s ease
 			&:hover
 				color: darken($accent, 30%)
+	.modal-content
+		max-height: 900px
+		overflow-y: scroll	
+.modal-open .modal 
+	overflow-y: hidden
+
 #list-example
 	margin-right: auto
 	font-size: 20px
