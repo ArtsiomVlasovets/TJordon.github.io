@@ -75,7 +75,7 @@ var clickPrivacy = $("#privacyLink");
 		 
 			//анимируем переход на расстояние - top за 1500 мс
 			if(t < 0){
-		$('.modal .modal-dialog').animate({scrollTop: t}, 1000);
+		$('.modal .modal-dialog .modal-content').animate({scrollTop: t}, 1000);
 		}
 
 	}
@@ -90,7 +90,7 @@ var clickPrivacy = $("#privacyLink");
 		 
 			//анимируем переход на расстояние - top за 1500 мс
 			if(t > 200){
-		$('.modal .modal-dialog').animate({scrollTop: t}, 1000);
+		$('.modal .modal-dialog .modal-content').animate({scrollTop: t}, 1000);
 		}
 	}
 
@@ -147,9 +147,9 @@ var clickPrivacy = $("#privacyLink");
 
 	setInterval(function(){	if($('.modal').hasClass('show')){
 	
-		$('html').css('overflow-y', 'hidden')
+		$('html').css('overflow-y', 'hidden');
 	}else{
-		$('html').css('overflow-y', 'auto')
+		$('html').css('overflow-y', 'auto');
 		;
 	}}, 100)
 
