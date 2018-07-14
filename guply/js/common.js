@@ -166,6 +166,10 @@ var clickPrivacy = $("#privacyLink");
 			modalHeight.css('max-height','500px');
 		}else if(($(window).height()) < 1000){
 			modalHeight.css('max-height','700px');
+		}else if(($(window).height()) < 1200){
+			modalHeight.css('max-height','900px');
+		}else{
+			modalHeight.css('max-height','auto');
 		}
 
 	}, 100)
