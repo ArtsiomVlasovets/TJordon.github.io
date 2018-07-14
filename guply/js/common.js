@@ -153,27 +153,27 @@ var clickPrivacy = $("#privacyLink");
 		;
 	}}, 100)
 
-
+/*
 	var modalHeight = $(".modal .modal-content"); 
 	setInterval(function(){	
 		if(($(window).height()) < 350){
-			modalHeight.css('max-height','90%');
+			modalHeight.css('max-height','93%');
 		}	else if(($(window).height()) < 450){
-			modalHeight.css('max-height','90%');
+			modalHeight.css('max-height','93%');
 		}else if(($(window).height()) < 600){
-			modalHeight.css('max-height','93%');
+			modalHeight.css('max-height','94%');
 		}else if(($(window).height()) < 800){
-			modalHeight.css('max-height','93%');
-		}else if(($(window).height()) < 1000){
 			modalHeight.css('max-height','95%');
-		}else if(($(window).height()) < 1200){
+		}else if(($(window).height()) < 1000){
 			modalHeight.css('max-height','97%');
-		}else{
+		}else if(($(window).height()) < 1200){
 			modalHeight.css('max-height','98%');
+		}else{
+			modalHeight.css('max-height','100%');
 		}
 
 	}, 100)
-
+*/
 
 	setInterval(function() {
 		var pos = $('.pos-f-t');
