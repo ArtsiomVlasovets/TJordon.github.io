@@ -1,0 +1,175 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	position: relative
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+.tar
+	text-align: right
+.show
+	display: block
+.hide
+	display: none
+
+b, strong
+	font-weight: bold
+
+
+header.home-header
+	color: #E6E6E6
+	min-height: 100vh
+	position: relative
+	background-size: cover
+	background-position: center
+	z-index: 0
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: #272822
+		opacity: 0.4
+	.top-line
+		padding-top: 55px
+		position: relative
+		z-index: 1
+		text-align: center
+		.main-menu
+			margin: 0 auto
+			padding-top: 30px
+			ul
+				li
+					list-style-type: none
+					text-transform: uppercase
+					display: inline-block
+					margin-right: 100px
+					letter-spacing:  2px
+					font-size: 24px
+					&:last-child
+						margin-right: 0
+					a
+						text-decoration: none
+
+	.head-btns
+		position: relative
+		max-width: 70%
+		margin: 0 auto	
+		margin-top: 25%
+		z-index: 3
+		a
+			display: inline-block
+			font-size: 65px
+			text-transform: uppercase
+			font-weight: bold
+			color: $color
+			text-decoration: none
+			&:last-child
+				float: right
+.header-text
+	position: relative
+	z-index: 2
+	margin-top: 200px
+	h1
+		text-transform: uppercase
+		font-size: 60px
+
+.left 
+	color: #F2F2F2
+	text-decoration: none
+	font-size: 1em
+	position: relative
+	transition: all 0.6s
+	&:hover
+		color: darken($color, 25%)
+	&:before
+		content: ""
+		width: 0
+		height: 0.1em
+		position: absolute
+		bottom: 0
+		left: 0
+		background: darken($color, 25%)
+		transition: all 0.3s
+	&:hover:before
+		width: 100%
+		left: 0
+		background: darken($color, 25%)
+a.btnb
+	padding: 0px 5px 0px 20px
+	position: relative
+	font-size: 60px
+	color: #fff
+	letter-spacing: 1.1rem
+	text-transform: uppercase
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1)
+	cursor: pointer
+	user-select: none
+	position: relative
+	z-index: 3
+	&:before, &:after
+		content: ""
+		position: absolute
+		transition: inherit
+		z-index: -1
+	&:hover
+		color: darken($color, 70%)!important
+		transition-delay: 0.6s
+		&:before
+			transition-delay: 0s
+		&:after
+			background: $color
+			transition-delay: 0.4s	
+.from-right
+	&:before, &:after
+		top: 0
+		width: 0
+		height: 100%
+	&:before
+		left: 0
+		border: 1px solid $color
+		border-left: 0
+		border-right: 0
+	&:after
+		right: 0
+	&:hover
+		&:before, &:after
+			width: 100%
+//--------------------Events------------------------
+
+
+
+
+@import "media" // Always at the end
