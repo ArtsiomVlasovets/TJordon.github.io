@@ -37,24 +37,15 @@ body
 	&.img-width
 		width: 100%
 
-.text-center
-	text-align: center
-.tar
-	text-align: right
-.show
-	display: block
-.hide
-	display: none
-
 b, strong
 	font-weight: bold
 
 header.pages-header
-	min-height: 115px
+	max-height: 115px
 	background-color: $accent
 	.top-line, .collapse
 		.logo-container
-			padding-top: 15px
+			padding-top: 5px
 		.main-nav
 				text-align: right
 				margin: 0 auto
@@ -72,7 +63,7 @@ header.pages-header
 						display: inline-block
 						margin-right: 80px
 						letter-spacing:  2px
-						font-size: 24px
+						font-size: 19px
 						&:last-child
 							margin-right: 0
 						a
@@ -129,7 +120,9 @@ header.pages-header
 		max-width: 90%		
 .pos-f-t
 	.collapse
-		padding-bottom: 20px
+		padding-bottom: 15px
+		padding-top: 15px
+		background-color: $accent
 		.main-nav
 			ul
 				flex-direction: column
@@ -278,10 +271,16 @@ footer.footer-wrap
 					padding-left: 20px
 	.sec-footer-wrap
 		width: 100%
-		height: 52px
+		height: 100px
 		border-top: 1px solid #A0A0A0
 		text-transform: uppercase
 		font-size: 16px
+		display: flex
+		align-items: center
+		.row
+			width: 100%
+			display: flex
+			justify-content: space-between
 		p
 			margin-bottom: 0
 			margin-top: 10px
@@ -305,7 +304,74 @@ footer.footer-wrap
 					width: 100%
 					-webkit-transition: none
 					transition: none*/
+.callIn
+	background-color: $accent
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.mfp-content
+	height: 100%
+	vertical-align: middle
+.white-popup 
+	border: 5px solid $accent
+	height: 1px
+	position: relative
+	background: #FFF
+	padding: 20px
+	max-width: 60%
+	min-height: 70%
+	margin: 20px auto
+	background-size: cover
+	background-position: center
+	top: 15%
+	display: flex
+	align-items: flex-end
+	.descContent
+		position: relative
+		width: 100%
+		min-height: 25%
+		background-color: $accent
+		opacity: 0.8
+		overflow-y: auto
+
+	.content-overlay
+		position: absolute
+		margin-top: 10px
+		padding: 10px
+		p
+			color: #E6E6E6
+			a
+				color: #fff
+				font-size: 20px
+				text-transform: uppercase
+				border-bottom: 2px solid #fff
+				transition: all .2s ease
+				text-decoration: none
+				display: inline-block
+				&:hover
+					border: none
+					color: darken(#fff, 30%)	
+
 body
 	opacity: 1
+
+.text-center
+	text-align: center
+.tar
+	text-align: right
+.show
+	display: block
+.flex
+	display: flex
+.hide
+	display: none
+.grid
+	display: grid	
 
 @import "media" // Always at the end

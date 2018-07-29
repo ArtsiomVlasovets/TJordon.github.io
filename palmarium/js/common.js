@@ -16,7 +16,7 @@ window.onresize = fTime;
 	var homeHeight;
 	var topLineHeight = topLine[0].offsetHeight;
 	homeHeight = ((document.documentElement.clientHeight) - topLineHeight);
-	home.style.minHeight = (homeHeight-20)+'px'; 
+	home.style.minHeight = (homeHeight-50)+'px'; 
 }
 
 fTime();
