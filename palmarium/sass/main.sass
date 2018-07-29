@@ -25,7 +25,7 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-
+	background-color: black
 .img-responsive
 	display: block
 	max-width: 100%
@@ -41,12 +41,14 @@ body
 	display: block
 .hide
 	display: none
-
+.full-width
+	width: 100%
 b, strong
 	font-weight: bold
 
 
 header.home-header
+	background-color: #000
 	color: #E6E6E6
 	min-height: 100vh
 	position: relative
@@ -85,9 +87,9 @@ header.home-header
 
 	.head-btns
 		position: relative
-		max-width: 70%
+		max-width: 80%
 		margin: 0 auto	
-		margin-top: 25%
+		//margin-top: 25%
 		z-index: 3
 		a
 			display: inline-block
@@ -98,6 +100,17 @@ header.home-header
 			text-decoration: none
 			&:last-child
 				float: right
+
+	
+header
+	.container-fluid
+		min-height: 80vh
+		display: flex
+		justify-content: center
+		align-item: center
+
+
+
 .header-text
 	position: relative
 	z-index: 2
@@ -168,7 +181,8 @@ a.btnb
 		&:before, &:after
 			width: 100%
 //--------------------Events------------------------
-
+body
+	opacity: 1
 
 
 

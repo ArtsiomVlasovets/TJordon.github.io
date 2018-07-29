@@ -22,8 +22,17 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css/main.min.css">
-
+	
+	<style type="text/css"> 
+		body { 
+			opacity: 0;
+			overflow-x: hidden;
+		}
+		html {
+			background-color: #fff; 
+		}
+	</style>	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
 
@@ -33,27 +42,26 @@
 
 
 
-	<header class="pages-header shadow">
-		<div class="top-line">
-
+	<header class="pages-header fixed-top shadow">
+		<div style="display: none;" id="topLineId" class="top-line">
 			<div class="container-fluid">
 				<div class="row justify-content-end">
-					<div class="col">
+					<div class="col-xl-3 col-lg-12">
 						<div class="logo-container">
 							<a href="index.html"><img src="img/logo1.png" alt=""></a>
 						</div>						
 					</div>
-					<div class="col ml-auto">
+					<div class="col-xl-9 col-lg-12 ml-auto align-self-center">
 						<nav class="main-nav">
 							<ul>
 								<li><a class="left" href="index.html">home</a></li>
-								<li id="down"><a  class="left" href="">services</a>
+								<li id="down"><a  class="left" href="#">services</a>
 									<div id="submnu" class="hide">
 										<a class="" href="Events.html">events</a>
 										<a class="" href="Travel.html">travel</a>
 									</div>
 								</li>
-								<li><a class="left" href="Aboutus.html">about us</a></li>
+								<li><a class="left" href="AboutUs.html">about us</a></li>
 								<li><a class="left" href="">contact</a></li>
 							</ul>
 						</nav>
@@ -62,32 +70,106 @@
 
 			</div>
 
-		</div>	
-	</header>
 
-	<section class="event-section">
-		<h1>Travel</h1>
-	</section>
+
+		</div>
+
+		<div style="display: none;" id="secondLineId" class="pos-f-t"> 
+			<nav class="navbar navbar-dark ">
+
+				<div class="logo-container">
+					<a href="index.html"><img src="img/logo1.png" alt=""></a>
+				</div><button class="navbar-toggler collapsed" id="togglBtnId" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		</nav>
+		<div class="collapse" id="navbarToggleExternalContent" style="">
+			<nav class="main-nav">
+				<ul style="display: none;">
+					<li><a class="left" href="index.html">home</a></li>
+					<li><a class="left" href="Events.html">events</a></li>
+					<li><a class="left" href="Travel.html">travel</a></li>
+					<li><a class="left" href="AboutUs.html">about us</a></li>
+					<li><a class="left" href="">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+
+<section class="event-section">
+	<h1>Travel</h1>
+</section>
+
+
+
+<section id="my-portfolio" class="portfolio-section grid">
+
 	
-
-
-	<section id="my-portfolio" class="portfolio-section grid">
-
-	
-		<div class="portfolio-item grid" style="background-image: url(img/small/foto-_1.jpg)"><span>Island</span><a class=" gallery-item"  href="img/small/foto-_1.jpg"></a></div>
-		<div class="portfolio-item grid">
+	<div class="portfolio-item grid" style="background-image: url(img/small/foto-_1.jpg)">
+		<span class="descrTravel">Algeria</span>
+		<a class=" gallery-item"  href="img/small/foto-_1.jpg"></a>
+		<div class="callIn hide">
 			<h1>algeria</h1>
 			<p>499$</p>
 			<span><a href="" class="call-btn">book now</a></span>
 		</div>
-		<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_3.jpg)"><span>Travelling</span><a class=" gallery-item"  href="img/small/foto-_3.jpg"></a></div>
-		<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_4.jpg)"><span>Perfect Solutions</span><a class=" gallery-item"  href="img/small/foto-_4.jpg"></a></div>
-		<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_5.jpg)"><span>Good emotions</span><a class=" gallery-item"  href="img/small/foto-_5.jpg"></a></div>
-		<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_6.jpg)"><span>Palmarium</span><a class=" gallery-item"  href="img/small/foto-_6.jpg"></a></div>
+	</div>
+
+	<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_5.jpg)">
+	<span class="descrTravel">Turkey</span>
+	<a class=" gallery-item"  href="img/small/foto-_5.jpg"></a>
+	<div class="callIn hide">
+			<h1>algeria</h1>
+			<p>499$</p>
+			<span><a href="" class="call-btn">book now</a></span>
+		</div>
+	</div>
+
+	<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_3.jpg)">
+	<span class="descrTravel">Iran</span>
+	<a class=" gallery-item"  href="img/small/foto-_3.jpg"></a>
+	<div class="callIn hide">
+			<h1>algeria</h1>
+			<p>499$</p>
+			<span><a href="" class="call-btn">book now</a></span>
+		</div>
+	</div>
+
+	<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_4.jpg)">
+	<span class="descrTravel">Georgia</span>
+	<a class=" gallery-item"  href="img/small/foto-_4.jpg"></a>
+	<div class="callIn hide">
+			<h1>algeria</h1>
+			<p>499$</p>
+			<span><a href="" class="call-btn">book now</a></span>
+		</div>
+	</div>
+
+	<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_5.jpg)">
+	<span class="descrTravel">USA</span>
+	<a class=" gallery-item"  href="img/small/foto-_5.jpg"></a>
+	<div class="callIn hide">
+			<h1>algeria</h1>
+			<p>499$</p>
+			<span><a href="" class="call-btn">book now</a></span>
+		</div>
+	</div>
+
+	<div class="portfolio-item grid gallery-item" style="background-image: url(img/small/foto-_6.jpg)"><span >Europe</span><a class=" gallery-item"  href="img/small/foto-_6.jpg"></a>
+<div class="callIn hide">
+			<h1>algeria</h1>
+			<p>499$</p>
+			<span><a href="" class="call-btn">book now</a></span>
+		</div>
+	</div>
 
 
 
-	</section>
+</section>
 
 <div class="popup hide">
 	<div class="popup-img">
@@ -95,27 +177,24 @@
 	</div>
 </div>
 
-	<footer>
-		<div class="container-fluid footer-wrap">
-			<div class="row">
-				<div class="col-lg-9">	<p>Copyright 2018 Palmarium Travel & Events Gmbh </p></div>
-				<div class="col-lg-2 tar"><p>datenschutzerklaerung</p></div>
-				<div class="col tar"><p>Impresum</p></div>
-			</div>
+<footer id="home-container" class="footer-wrap align-items-end" >
+	<div class="container-fluid sec-footer-wrap">
+		<div class="row">
+			<div class="col-xl-8 col-lg-12">	<p>Copyright 2018 Palmarium Travel & Events Gmbh </p></div>
+			<div class="col-xl-2 col-lg-12"><p>datenschutzerklaerung</p></div>
+			<div class="col-xl-2 col-lg-12"><p>Impresum</p></div>
 		</div>
+	</div>
+</footer>
 
 
+<link rel="stylesheet" href="css/travel.min.css">	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/second.min.js"></script>
 
-	</footer>
 
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/travel.min.css">
-	
-	<script src="js/scripts.min.js"></script>
-	
-	
 
 </body>
 </html>
