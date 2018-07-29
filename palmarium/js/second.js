@@ -32,6 +32,20 @@ $('.portfolio-section').magnificPopup({
   // other options
 });
 
+var flag = 0;
+
+function hideLoad(){
+if(flag == 0){
+	$('.collapse .main-nav ul').show(10);
+	flag = 1;
+	}else if(flag == 1){
+	$('.collapse .main-nav ul').hide(10);
+	flag = 0;
+	}
+}
+
+$('#togglBtnId').on('click', hideLoad);
+
 
 
 function windowSize(){
@@ -43,4 +57,8 @@ function windowSize(){
         $('#topLineId').show(10);
     }
 }
+
 $(window).on('load resize',windowSize);
+
+
+
