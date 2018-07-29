@@ -3,6 +3,7 @@ var submnu = document.getElementById('submnu');
 var home = document.getElementById('home-container');
 var topLine = document.querySelectorAll('.pages-header');
 var sectionLine = document.querySelectorAll('.event-section');
+var portfolio = document.getElementById('my-portfolio');
 down.onmouseover=function(){
 	//alert(submnu);
 	submnu.classList.remove('hide');
@@ -24,7 +25,12 @@ window.onresize = fTime;
 	var homeHeight;
 	var topLineHeight = topLine[0].offsetHeight;
 	var sectionHeight = sectionLine[0].offsetHeight;
-	homeHeight = ((document.documentElement.clientHeight) - topLineHeight - sectionHeight);
+	var portfolioHeight = portfolio.offsetHeight;
+	if(portfolio) {
+	homeHeight = ((document.documentElement.clientHeight) - topLineHeight - sectionHeight - portfolioHeight);	
+	}else{
+	homeHeight = ((document.documentElement.clientHeight) - topLineHeight - sectionHeight);		
+	}
 	home.style.minHeight = (homeHeight-20)+'px'; 
 }
 
