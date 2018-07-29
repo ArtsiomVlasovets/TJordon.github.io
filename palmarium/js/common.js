@@ -22,9 +22,9 @@ window.onresize = fTime;
 fTime();
 
 var imgHead = [
-			'img/foto-_13.jpg',
-			'img/foto-_15.jpg',
-			'img/foto-_16.jpg',
+			'img/foto-_13-min.jpg',
+			'img/foto-_15-min.jpg',
+			'img/foto-_16-min.jpg',
 		], i=1;
 	function csaHead(){
 
