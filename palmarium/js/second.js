@@ -25,8 +25,9 @@ window.onresize = fTime;
 	var homeHeight;
 	var topLineHeight = topLine[0].offsetHeight;
 	var sectionHeight = sectionLine[0].offsetHeight;
-	var portfolioHeight = portfolio.offsetHeight;
+
 	if(portfolio) {
+	var portfolioHeight = portfolio.offsetHeight;	
 	homeHeight = ((document.documentElement.clientHeight) - topLineHeight - sectionHeight - portfolioHeight);	
 	}else{
 	homeHeight = ((document.documentElement.clientHeight) - topLineHeight - sectionHeight);		
