@@ -11,7 +11,7 @@
 html
 	position: relative
 body
-	margin-top: 150px
+	margin-top: 100px
 	position: relative
 	font-size: 16px
 	min-width: 320px
@@ -45,7 +45,9 @@ header.pages-header
 	background-color: $accent
 	.top-line, .collapse
 		.logo-container
-			padding-top: 5px
+			img
+				width: 45%
+				huto: 
 		.main-nav
 				text-align: right
 				margin: 0 auto
@@ -63,7 +65,7 @@ header.pages-header
 						display: inline-block
 						margin-right: 80px
 						letter-spacing:  2px
-						font-size: 19px
+						font-size: 16px
 						&:last-child
 							margin-right: 0
 						a
@@ -95,13 +97,13 @@ header.pages-header
 		background: darken($color, 25%)
 #down
 	position: relative
-	padding-bottom: 35px
-	padding-top: 35px
+	padding-bottom: 20px
+	padding-top: 20px
 	#submnu
 		padding-bottom: 10px
 		position: absolute
-		top: 100px
-		left: -40px
+		top: 60px
+		left: -50px
 		background-color: $accent
 		a
 			display: block
@@ -113,11 +115,15 @@ header.pages-header
 
 .navbar
 	justify-content: space-between	
-	height: 115px
+	height: 65px
 	background-color: $accent	
 	padding: 0 50px
+	.logo-container
+		img
+			max-width: 50%
+			height: auto
 	.nav-wrap
-		max-width: 90%		
+		max-width: 90%			
 .pos-f-t
 	.collapse
 		padding-bottom: 15px
